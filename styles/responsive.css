@@ -18,6 +18,48 @@
     #page-home main{
         align-items: center;
     }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+    
+    #page-search-results .cards img{
+        height: 250px;
+    }
+
+    #modal .content{
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #modal .header h1{
+        color: white;
+        font-size: 26px;
+        line-height: 42px;    
+    }
+    
+    #modal form label{
+        font-size: 14px;
+    }
+    #modal form .field{
+        display: flex;
+    }
+    
+    #modal form input{
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-right: 12px;
+    }
+    
+    #modal form button{
+        width: 60px;
+        height: 60px;       
+         
+    }
+    
+
 }
 
 @media(min-width: 1700px){

@@ -8,7 +8,7 @@
 * HTML
 * CSS
 * JavaScript
-* template engine: Nunjucks
+* Template engine: Nunjucks
 
 ## Back-end:
 

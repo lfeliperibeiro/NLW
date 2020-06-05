@@ -8,9 +8,12 @@
 * HTML
 * CSS
 * JavaScript
+* template engine: Nunjucks
 
 ## Back-end:
 
 * Node.js
+* Express
 * SQLite
+
 

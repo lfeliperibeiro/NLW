@@ -45,6 +45,7 @@
     line-height: 16px;
     display: block;
     margin-bottom: 8px;
+    
 }
 #modal form .field{
     display: flex;
@@ -59,6 +60,7 @@
     font-size: 16px;
     color: #6c6c80;
     margin-right: 16px;
+        
 }
 
 #modal form button{
@@ -70,6 +72,6 @@
 }
 
 #modal form button:hover{
-    background-color: #2fb86e;
+    background-color: #2fb86e;  
 }
 

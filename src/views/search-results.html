@@ -7,36 +7,31 @@ title %}
 %}
 
 <main>
-  <h4><strong>2 pontos</strong> encontrados</h4>
+  
+  {% if total > 0 %}
 
   <div class="cards">
+    {% for place in places %}    
+    <h4><strong>{{ total }} pontos</strong> encontrados</h4>
     <div class="card">
-      <img
-        src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1101&q=80"
-        alt=""
-      />
-      <h1>Colectoria</h1>
-      <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+      <img src="{{ place.image }}" alt="{{ place.name }}" />
+      <h1>{{ place.name }}</h1>
+      <h3>{{ place.items }}</h3>
       <p>
-        Rio do Sul, Santa Catarina <br />
-        Guilherme Gembala, Jardim América <br />
-        N°260
+        {{ place.city }}, {{ place.state }} <br />
+        {{ place.address }} <br />
+        {{ place.address2 }}
       </p>
     </div>
 
-    <div class="card">
-      <img
-        src="https://images.unsplash.com/photo-1558583055-d7ac00b1adca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
-        alt=""
-      />
-      <h1>Papersider</h1>
-      <h3>Papéis e Papelão</h3>
-      <p>
-        Rio do Sul, Santa Catarina <br />
-        Guilherme Gembala, Jardim América <br />
-        N°260
-      </p>
-    </div>
+    {% endfor %}
+        
   </div>
+
+  {% else %}
+  <h4><strong>Nenhum</strong> local encontrado</h4>
+  {% endif %}
+  
+
 </main>
 {% endblock content %}

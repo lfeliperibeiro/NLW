@@ -75,3 +75,16 @@
     background-color: #2fb86e;  
 }
 
+/* modal da pagina success */
+
+#modal.success .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.success h1{
+    color: white;
+    margin-top: 34px;
+}
+

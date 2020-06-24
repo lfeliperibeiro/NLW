@@ -14,6 +14,9 @@
 
 * Node.js
 * Express
+
+## Banco de Dados
+
 * SQLite
 
 
